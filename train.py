@@ -34,12 +34,14 @@ def main():
 
     model = Model()
 
-    model.create_convolutional_model()
-    model.train((x_train, y_train), x_test, y_test)
+    # model.create_convolutional_model()
+    # model.train((x_train, y_train), x_test, y_test)
 
-    loss, accuracy = model.test((x_test, y_test))
+    # loss, accuracy = model.test((x_test, y_test))
 
-    print(f"Loss is {loss} and accuracy is {accuracy}")
+    model.load()
+
+    # print(f"Loss is {loss} and accuracy is {accuracy}")
 
     model.verify()
 
